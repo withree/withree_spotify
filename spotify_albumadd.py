@@ -95,8 +95,8 @@ def main():
                 existing_track_uris.add(track_uri)
 
     if tracks_to_add:
-        for i in range(0, len(track_uris), 50):
-            sp.playlist_add_items(playlist_id, track_uris[i:i + batch_size])
+        for i in range(0, len(tracks_to_add), 50):
+            sp.playlist_add_items(playlist_id, tracks_to_add[i:i + 50])
             print(f"Added {len(tracks_to_add)} new tracks")
     else:
         print("No new tracks to add")
