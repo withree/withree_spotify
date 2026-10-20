@@ -2,6 +2,7 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import pandas as pd
 
+#main
 #--------------CONFIG-----------------------
 EXCEL_FILE = "albums.xlsx"
 PLAYLIST_NAME = "My Album Collection"
